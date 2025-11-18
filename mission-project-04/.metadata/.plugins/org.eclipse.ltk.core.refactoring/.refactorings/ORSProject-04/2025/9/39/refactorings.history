@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ORSProject-04/src/main/webapp/jsp/ChangePassword.jsp&apos; to &apos;ChangePasswordView.jsp&apos;" description="Rename resource &apos;ChangePassword.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/jsp/ChangePassword.jsp" name="ChangePasswordView.jsp" stamp="1758620102874" updateReferences="true"/>
+</session>
