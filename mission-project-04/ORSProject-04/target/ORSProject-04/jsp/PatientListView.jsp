@@ -97,11 +97,12 @@
 					<input type="checkbox"	class="case" name="ids" value="<%=bean.getId()%>">
 						
 					</td>
-					<td ><%=index++%></td>
-					<td ><%=bean.getName()%></td>
-					<td ><%=bean.getDateOfVisit()%></td>
-					<td ><%=bean.getMobile()%></td>
-					<td ><%=bean.getDecease()%></td>
+					
+					<td style="text-align: center;"><%=index++%></td>
+					<td style="text-align: center;" ><%=bean.getName()%></td>
+					<td style="text-align: center;"><%=bean.getDateOfVisit()%></td>
+					<td style="text-align: center;"><%=bean.getMobile()%></td>
+					<td style="text-align: center;"><%=bean.getDecease()%></td>
 
 					<td style="text-align: center;"><a href="PatientCtl?id=<%=bean.getId()%>">Edit</a>
 					</td>

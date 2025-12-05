@@ -1,14 +1,10 @@
 /**
- * @Author: Sejal chourasiya
- * @Description: DoctorModel handles CRUD operations and search functionality 
- * for Doctor entities. It interacts with the database using JDBC.
- * 
- * @Creation Date: 07-Oct-2025
- * @Version: 1.0
- */
+ * @author Pranita gayakward
+ *
+ */ 
 
 package in.co.rays.proj4.model;
-
+ 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -25,6 +21,8 @@ import in.co.rays.proj4.util.JDBCDataSource;
  * Model class for managing Doctor entity. Provides methods for 
  * add, update, delete, find by PK, find by Name, search, and list operations.
  */
+
+ 
 public class DoctorModel {
 
     /**

@@ -99,11 +99,11 @@
 					<input type="checkbox"	class="case" name="ids" value="<%=bean.getId()%>">
 						
 					</td>
-					<td ><%=index++%></td>
-					<td ><%=bean.getName()%></td>
-					<td ><%=bean.getDob()%></td>
-					<td ><%=bean.getMobile()%></td>
-					<td ><%=bean.getExpertise()%></td>
+					<td style="text-align: center;" ><%=index++%></td>
+					<td style="text-align: center;"><%=bean.getName()%></td>
+					<td style="text-align: center;"><%=bean.getDob()%></td>
+					<td style="text-align: center;"><%=bean.getMobile()%></td>
+					<td style="text-align: center;"><%=bean.getExpertise()%></td>
 
 					<td style="text-align: center;"><a href="DoctorCtl?id=<%=bean.getId()%>">Edit</a>
 					</td>

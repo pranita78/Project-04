@@ -2,6 +2,10 @@ package in.co.rays.proj4.bean;
 
 import java.util.Date;
 
+/**
+ * @author Pranita gayakward
+ *
+ */
 public class UserBean extends BaseBean {
 
 	private String firstName;

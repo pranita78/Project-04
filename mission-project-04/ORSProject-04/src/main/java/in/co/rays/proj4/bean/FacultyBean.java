@@ -1,7 +1,12 @@
+/**
+ * @author Pranita gayakward
+ *
+ */
 package in.co.rays.proj4.bean;
 
 import java.util.Date;
 
+ 
 public class FacultyBean extends BaseBean {
 
 	private String firstName;

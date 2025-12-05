@@ -341,7 +341,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JXIgcqZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_iJB3UKZ8EfCpsfRFE7RHiA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Iw_tjKZ7EfCzbOXG2h25Jw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZAQt0MauEfCqoNysPFG7-w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Iw_tjKZ7EfCzbOXG2h25Jw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JXIgc6Z7EfCzbOXG2h25Jw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -375,7 +375,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JXNY9KZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_iJH98KZ8EfCpsfRFE7RHiA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Iw-ft6Z7EfCzbOXG2h25Jw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ZAU_Q8auEfCqoNysPFG7-w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Iw-ft6Z7EfCzbOXG2h25Jw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JXNY9aZ7EfCzbOXG2h25Jw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -691,6 +691,7 @@
     <bindings xmi:id="_IyIV96Z7EfCzbOXG2h25Jw" keySequence="CTRL+F9" command="_Iw1WMqZ7EfCzbOXG2h25Jw"/>
     <bindings xmi:id="_IyJkEqZ7EfCzbOXG2h25Jw" keySequence="CTRL+F11" command="_Iw_tuKZ7EfCzbOXG2h25Jw"/>
     <bindings xmi:id="_IyJkE6Z7EfCzbOXG2h25Jw" keySequence="CTRL+F12" command="_Iw1WH6Z7EfCzbOXG2h25Jw"/>
+    <bindings xmi:id="_-_vyQMatEfCDQtHkZCvIuQ" keySequence="CTRL+SHIFT+F10" command="_-_LKgMatEfCDQtHkZCvIuQ"/>
   </bindingTables>
   <bindingTables xmi:id="_Ix0z96Z7EfCzbOXG2h25Jw" elementId="org.eclipse.ant.ui.AntEditorScope" bindingContext="_IxFNJqZ7EfCzbOXG2h25Jw">
     <bindings xmi:id="_Ix0z-KZ7EfCzbOXG2h25Jw" keySequence="F3" command="_Iw1ViqZ7EfCzbOXG2h25Jw"/>
@@ -991,6 +992,11 @@
   <bindingTables xmi:id="_JtX2OaZ7EfCzbOXG2h25Jw" bindingContext="_JtX2OKZ7EfCzbOXG2h25Jw"/>
   <bindingTables xmi:id="_JtX2O6Z7EfCzbOXG2h25Jw" bindingContext="_JtX2OqZ7EfCzbOXG2h25Jw"/>
   <bindingTables xmi:id="_JtX2PaZ7EfCzbOXG2h25Jw" bindingContext="_JtX2PKZ7EfCzbOXG2h25Jw"/>
+  <bindingTables xmi:id="_-_moUMatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.hql" bindingContext="_-_ON0MatEfCDQtHkZCvIuQ">
+    <bindings xmi:id="_-_moUcatEfCDQtHkZCvIuQ" keySequence="CTRL+CR" command="_-_LKg8atEfCDQtHkZCvIuQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="__Q-FIcatEfCDQtHkZCvIuQ" bindingContext="__Q-FIMatEfCDQtHkZCvIuQ"/>
+  <bindingTables xmi:id="__Q-FI8atEfCDQtHkZCvIuQ" bindingContext="__Q-FIsatEfCDQtHkZCvIuQ"/>
   <rootContext xmi:id="_IwEgdKZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_IwEgdaZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_IwEgdqZ7EfCzbOXG2h25Jw" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -1034,6 +1040,7 @@
         </children>
         <children xmi:id="_IxFNSaZ7EfCzbOXG2h25Jw" elementId="org.eclipse.jdt.ui.propertiesEditorScope" name="Editing Properties Files" description="Editing Properties Files Context"/>
         <children xmi:id="_IxFNS6Z7EfCzbOXG2h25Jw" elementId="org.eclipse.jst.jsf.facesconfig.editorContext" name="In Faces Config Editor" description="Key binding context when using the Faces Config Editor"/>
+        <children xmi:id="_-_ON0MatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.hql" name="Editing HQL"/>
       </children>
       <children xmi:id="_IxFNFKZ7EfCzbOXG2h25Jw" elementId="org.eclipse.compare.compareEditorScope" name="Comparing in an Editor" description="Comparing in an Editor"/>
       <children xmi:id="_IxFNFqZ7EfCzbOXG2h25Jw" elementId="org.eclipse.debug.ui.memoryview" name="In Memory View" description="In memory view"/>
@@ -1115,6 +1122,8 @@
   <rootContext xmi:id="_JtX2OKZ7EfCzbOXG2h25Jw" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" name="Auto::org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
   <rootContext xmi:id="_JtX2OqZ7EfCzbOXG2h25Jw" elementId="org.eclipse.wst.web.ui.wizardsActionSet" name="Auto::org.eclipse.wst.web.ui.wizardsActionSet"/>
   <rootContext xmi:id="_JtX2PKZ7EfCzbOXG2h25Jw" elementId="org.eclipse.wst.ws.explorer.explorer" name="Auto::org.eclipse.wst.ws.explorer.explorer"/>
+  <rootContext xmi:id="__Q-FIMatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.actionSet" name="Auto::org.hibernate.eclipse.console.actionSet"/>
+  <rootContext xmi:id="__Q-FIsatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.launch.actionset" name="Auto::org.hibernate.eclipse.launch.actionset"/>
   <descriptors xmi:id="_I2Zx8KZ7EfCzbOXG2h25Jw" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
   </descriptors>
@@ -1662,6 +1671,30 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.wst.xsl.ui"/>
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
+  </descriptors>
+  <descriptors xmi:id="__Qx34MatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.views.KnownConfigurationsView" label="Hibernate Configurations" iconURI="platform:/plugin/org.hibernate.eclipse.console/icons/hibernate_small_icon.gif" tooltip="" category="Hibernate" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.hibernate.eclipse.console.views.KnownConfigurationsView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.hibernate.eclipse.console"/>
+    <tags>View</tags>
+    <tags>categoryTag:Hibernate</tags>
+  </descriptors>
+  <descriptors xmi:id="__QztEMatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.views.QueryPageTabView" label="Hibernate Query Result" iconURI="platform:/plugin/org.hibernate.eclipse.console/icons/hibernate_small_icon.gif" tooltip="" category="Hibernate" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.hibernate.eclipse.console.views.QueryPageTabView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.hibernate.eclipse.console"/>
+    <tags>View</tags>
+    <tags>categoryTag:Hibernate</tags>
+  </descriptors>
+  <descriptors xmi:id="__QztEcatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.views.DynamicSQLPreviewView" label="Hibernate Dynamic SQL Preview" iconURI="platform:/plugin/org.hibernate.eclipse.console/icons/hibernate_small_icon.gif" tooltip="" category="Hibernate" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.hibernate.eclipse.console.views.DynamicSQLPreviewView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.hibernate.eclipse.console"/>
+    <tags>View</tags>
+    <tags>categoryTag:Hibernate</tags>
+  </descriptors>
+  <descriptors xmi:id="__Q07MMatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.views.QueryParametersView" label="Query Parameters" iconURI="platform:/plugin/org.hibernate.eclipse.console/icons/images/parameter.gif" tooltip="" category="Hibernate" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.hibernate.eclipse.console.views.QueryParametersView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.hibernate.eclipse.console"/>
+    <tags>View</tags>
+    <tags>categoryTag:Hibernate</tags>
   </descriptors>
   <menuContributions xmi:id="_IwEgeKZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" positionInParent="popup:toolbar">
     <children xsi:type="menu:HandledMenuItem" xmi:id="_IwEgeaZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" label="%command.name.customize" command="_IwEgeqZ7EfCzbOXG2h25Jw"/>
@@ -2975,6 +3008,16 @@
   <commands xmi:id="_JJshaqZ7EfCzbOXG2h25Jw" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.this" commandName="Show 'this' variable" description="Show or hide the this variable" category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
   <commands xmi:id="_JJsha6Z7EfCzbOXG2h25Jw" elementId="AUTOGEN:::variableViewActions/org.eclipse.wst.jsdt.debug.ui.variableview.show.prototypes" commandName="Show proto variables" description="Show or hide proto variables" category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
   <commands xmi:id="_JJshbKZ7EfCzbOXG2h25Jw" elementId="AUTOGEN:::org.eclipse.ui.articles.action.contribution.view/org.eclipse.wst.wsi.ui.internal.actions.actionDelegates.ValidateWSIProfileActionDelegate" commandName="WS-I Profile Validator" description="Validate WS-I Message Log File" category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="_-_LKgMatEfCDQtHkZCvIuQ" elementId="org.jboss.tools.common.ui.RegisterAsService" commandName="Register As Service" description="Adds class name to META-INF/services/%serviceType% file after service type is selected in the dialog from types extended and implemented by the class." category="_Iwy5OqZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="_-_LKgcatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.jdt.ui.run_jpaaction" commandName="Generate &amp;Hibernate/JPA annotations..." category="_-_J8YMatEfCDQtHkZCvIuQ"/>
+  <commands xmi:id="_-_LKgsatEfCDQtHkZCvIuQ" elementId="org.sonatype.m2e.egit.CloneAsMavenProjects" commandName="Clone Maven Projects..." category="_Iwy5XaZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="_-_LKg8atEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.console.actions.ExecuteHQLActionCommand" commandName="Run Query command" category="_Iwy5MKZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="__P_0wMatEfCDQtHkZCvIuQ" elementId="AUTOGEN:::org.hibernate.eclipse.launch.actionset/org.hibernate.eclipse.launch.LaunchMenuDelegateMenu" commandName="Hibernate Code Generation..." category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="__QAb0MatEfCDQtHkZCvIuQ" elementId="AUTOGEN:::org.hibernate.eclipse.launch.actionset/org.hibernate.eclipse.launch.LaunchMenuDelegateToolBar" commandName="Hibernate Code Generation..." description="Generate code via Hibernate Tools" category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="__QAb0catEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.launch.OpenHibernateToolsConfigurations" commandName="Hibernate Tools ..." category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="__QBp8MatEfCDQtHkZCvIuQ" elementId="AUTOGEN:::org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor.ruler.actions/org.jboss.tools.common.model.ui.actions.SelectRulerAction" commandName="SelectRulerAction.label" category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="__QBp8catEfCDQtHkZCvIuQ" elementId="AUTOGEN:::org.jboss.tools.jst.jsp.jspeditor.JSPTextEditor.ruler.actions/org.jboss.tools.common.model.ui.actions.SelectRulerAction" commandName="SelectRulerAction.label" category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
+  <commands xmi:id="__QCRAMatEfCDQtHkZCvIuQ" elementId="AUTOGEN:::org.jboss.tools.common.model.ui.editor.EditorPartWrapper.ruler.actions/org.jboss.tools.common.model.ui.actions.SelectRulerAction" commandName="SelectRulerAction.label" category="_Iwy5SKZ7EfCzbOXG2h25Jw"/>
   <addons xmi:id="_IwFukKZ7EfCzbOXG2h25Jw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_IwFukaZ7EfCzbOXG2h25Jw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_IwFukqZ7EfCzbOXG2h25Jw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2986,7 +3029,7 @@
   <addons xmi:id="_IwFumKZ7EfCzbOXG2h25Jw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_IwFumaZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_IwORcKZ7EfCzbOXG2h25Jw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_hxjygKZ8EfCpsfRFE7RHiA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_YsvU4cauEfCqoNysPFG7-w" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_Iwy5MKZ7EfCzbOXG2h25Jw" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_Iwy5MaZ7EfCzbOXG2h25Jw" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>
@@ -3040,4 +3083,5 @@
   <categories xmi:id="_Iwy5YaZ7EfCzbOXG2h25Jw" elementId="org.eclipse.gef.category.view" name="View" description="View"/>
   <categories xmi:id="_Iwy5YqZ7EfCzbOXG2h25Jw" elementId="org.eclipse.jdt.ui.category.source" name="Source" description="Java Source Actions"/>
   <categories xmi:id="_Iwy5Y6Z7EfCzbOXG2h25Jw" elementId="org.eclipse.pde.runtime.spy.commands.category" name="Spy"/>
+  <categories xmi:id="_-_J8YMatEfCDQtHkZCvIuQ" elementId="org.hibernate.eclipse.jdt.ui.run_jpaaction.category1" name="Generate Hibernate/JPA annotations"/>
 </application:Application>

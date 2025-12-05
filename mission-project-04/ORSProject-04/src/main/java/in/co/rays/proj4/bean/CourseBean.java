@@ -1,3 +1,7 @@
+/**
+ * @author Pranita gayakward
+ *
+ */
 package in.co.rays.proj4.bean;
 
 public class CourseBean extends BaseBean {

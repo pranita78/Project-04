@@ -1,7 +1,8 @@
 package in.co.rays.proj4.bean;
 
+ 
 /**
- * @author Sejal
+ * @author Pranita gayakward
  *
  */
 public class CollegeBean extends BaseBean {

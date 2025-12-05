@@ -1,3 +1,7 @@
+/**
+ * @author Pranita gayakward
+ *
+ */
 package in.co.rays.proj4.model;
 
 import java.sql.Connection;
@@ -19,12 +23,7 @@ import in.co.rays.proj4.util.EmailMessage;
 import in.co.rays.proj4.util.EmailUtility;
 import in.co.rays.proj4.util.JDBCDataSource;
 
-
-/**
- * @author Sejal
- *
- */
-
+ 
 public class UserModel {
 	
 	

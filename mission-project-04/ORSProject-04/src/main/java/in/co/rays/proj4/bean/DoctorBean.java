@@ -1,5 +1,6 @@
 /**
- * @Author: Sejal chourasiya
+ * @author Pranita gayakward
+ 
  * @Description: DoctorBean class represents a doctor entity in the system.
  * It stores details such as name, date of birth, mobile number, and area of expertise.
  * This class extends BaseBean to inherit common attributes like id, 
@@ -16,6 +17,8 @@ import java.util.Date;
 /**
  * DoctorBean class is a JavaBean that encapsulates the data for a Doctor.
  */
+
+ 
 public class DoctorBean extends BaseBean {
 
     /** The name of the doctor */
