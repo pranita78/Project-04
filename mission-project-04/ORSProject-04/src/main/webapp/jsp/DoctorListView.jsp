@@ -99,7 +99,7 @@
 					<input type="checkbox"	class="case" name="ids" value="<%=bean.getId()%>">
 						
 					</td>
-					<td style="text-align: center;" ><%=index++%></td>
+					<td style="text-align: center;"><%=index++%></td>
 					<td style="text-align: center;"><%=bean.getName()%></td>
 					<td style="text-align: center;"><%=bean.getDob()%></td>
 					<td style="text-align: center;"><%=bean.getMobile()%></td>

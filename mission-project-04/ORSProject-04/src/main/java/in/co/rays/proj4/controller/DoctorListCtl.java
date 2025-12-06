@@ -1,11 +1,6 @@
 /**
- * @Author: Ajay Pratap Kerketta
- * @Description: DoctorListCtl is a Servlet controller class to manage listing, searching,
- * pagination, and deletion of Doctor entities. It extends BaseCtl to inherit common
- * controller functionality.
- * 
- * @Creation Date: 07-Oct-2025
- * @Version: 1.0
+ * @author Pranita gayakward
+ *
  */
 
 package in.co.rays.proj4.controller;
@@ -35,7 +30,9 @@ import in.co.rays.proj4.controller.ORSView;
  * DoctorListCtl servlet handles operations related to listing, searching,
  * pagination, and deletion of doctors.
  */
+ 
 @WebServlet(name = "DoctorListCtl", urlPatterns = { "/ctl/DoctorListCtl" })
+
 public class DoctorListCtl extends BaseCtl {
 	Logger log = Logger.getLogger(DoctorListCtl.class);
 
@@ -45,6 +42,7 @@ public class DoctorListCtl extends BaseCtl {
      * 
      * @param request HttpServletRequest object
      */
+	
     @Override
     protected void preload(HttpServletRequest request) {
     	log.info("DoctorListCtl validate Method Started");
