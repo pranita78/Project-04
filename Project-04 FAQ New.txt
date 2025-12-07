@@ -1,0 +1,504 @@
+Q. what is ORS Project-04 ?
+
+-> Online Result System is a Online Web Application that manage the student and marksheet records.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Maven ?
+
+-> Maven is a powerful build automation tool.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is pom.xml ?
+
+-> It contains project information and configuration.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is web.xml ?
+
+-> It is a deployment descriptor. It contains mapping for Servlets, Filters, welcome pages, session-timeout.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is MVC Architecture ?
+
+-> MVC is a framework methodology that separates code implementation of an application into three components Model, View and Controller.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How many layers are present in the MVC Architecture ?
+
+1. Presentation Layer (View Logic)
+2. Navigation Layer (Control Logic)
+3. Business Layer (Business Logic, Data Access Logic, Integration Logic)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q. Dependencies, Technologies & Tools ?
+
+-> Dependencies :-
+
+1. junit = 4.1,
+2. c3p0 = 0.9.1.2,
+3. mysql = 8.0.30,
+4. jdbc = 3.0
+5. log4j = 1.2.17,
+6. javaxservlet = 3.1,
+7. javax.mail = 1.4.7
+---------------------------------
+
+-> Technologies :-
+
+1. jdk = 11
+2. jsp/servlet = 2.3/3.1
+3. mysql = 8.0.30
+4. jdbc = 3.0
+5. c3p0 = 0.9.2.1
+6. log4j = 1.2.17
+7. java mail api = 1.4.7
+8. junit = 4.1
+---------------------------------
+
+-> Tools :-
+
+1. Eclipse 2019-03
+2. Mysql Workbench 8.0.30
+3. ArgoUML
+4. ER win
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What are the utility classes you have in your project ?
+
+01) DataUtility - used to format data from one format to another 
+02) DataValidator - used to validate input data entered by user.
+03) EmailBuilder - used to build email message.
+04) EmailMessage -  contains email message.
+05) EmailUtility - provide email services.
+06) HtmlUtility - used to produce HTML contents like Dropdown List.
+07) JDBCDatasource - for DCP (Data Connection Pool)
+08) PropertyReader - used to read the property values from application properties file using Resource Bundle
+09) ServletUtility -  This class provides utility operation for Servlet container like forward, redirect, handle generic exception, manage success and error message, manage default Bean and List, manage pagination parameters
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is Hyperlink ?
+
+-> Hyperlink is a link when we click on it. It moves on another page.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is Hypertext ?
+
+-> Hypertext is a text which contains Hyperlink.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How do you make a Hyperlink ?
+
+-> with the help of anchor tag :-
+
+   <a href="Controller PATH (as per MVC Guideline)">Online Result System</a>
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. which tag you use to displaying image on page ?
+
+-> with the help of img tag :-
+
+   <img src="put image path here" />
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Validations ?
+
+-> Validations are of 2 Types :-
+
+1) Server Side Validation :- 
+         a) Input Validation - Validate input data entered by user.
+         b) Business Validation - that may need database communication.
+
+2) Client Side Validation :- 
+         we do not use this because Client Side Validations are done by Java Script, and Java Script is enabled/disabled by user at browser end.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How do you set & get Input Validation in your Project ?
+
+-> set :- request.setAttribute("key", value);
+
+-> where value = PropertyReader.getValue("key", "param");
+
+-> get :- ServletUtility.getErrorMessage("key", request);
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How do you set & get Business Validation in your Project ?
+
+-> set :- ServletUtility.setErrorMessage("msg", request);
+
+-> get :- ServletUtility.getErrorMessage(request);
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How do you set & get Success Message in your Project ?
+
+-> set :- ServletUtility.setSuccessMessage("msg", request);
+
+-> get :- ServletUtility.getSuccessMessage(request);
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How many types of scopes are there ?
+
+-> application 
+-> session
+-> page 
+-> request 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How to enable session ?
+
+-> HttpSession session = request.getSession(); (by default true)
+-> session.setAttributes();
+-> session.getAttributes();
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Difference between getSession(true) & getSession(false) ?
+
+-> HttpSession session = request.getSession() & request.getSession(true); (both same)
+-> If session exist than it will continue existing session, and if not exist than always create new session.
+
+-> HttpSession session = request.getSession(false);
+-> If session exist than it will continue existing session, and if not exist than it will not create new session and returns null.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How to identify user on server ?
+
+-> by using session 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Ways to destroy Session ?
+  
+-> session.invalidate();
+
+-> <session-config>
+   <session-timeout>15(minutes)</session-timeout>
+   </session-config>
+
+-> session.setMaxInactiveInterval(time(in seconds));
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is usecase ?
+
+-> one complete functionality is called usecase.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is modules ?
+
+-> set of related usecase is called Modules.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Utility classes ?
+
+-> Utility classes is used to reusability and reuseable services.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How do you configure Email in your Project ?
+
+-> add java.mail API (version-1.4.7) dependency in POM.xml
+
+-> make some custom & some pre-defined classes :-
+
+-> Custom Classes :- 
+
+   1. EmailMessage
+   2. Email Builder
+   3. EmailUtility
+
+-> Predefined Classes :-
+
+   1. Transport
+   2. Message 
+   3. MimeMessage
+   4. PasswordAuthentication
+   5. InternetAddress
+   6. Session
+
+-> and send mail by EmailUtility Class sendMail() method
+-> in sendMail() method we use transport class send method by passing msg object as method parameter.
+-> transport.send(msg);
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How to attach file along with email ?
+	
+-> Multipart mp = new MimeMultipart();
+-> MimeBodyPart file = new MimeBodyPart();
+-> file.attachFile();
+-> mp.addBodyPart(file);
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q. Write the method siganature of all method of one module ?
+
+-> public Integer nextPk(){}
+-> public long add(UserBean bean){}
+-> public UserBean findByPk(long pk){}
+-> public UserBean findByLogin(String loginId){}
+-> public void delete(UserBean bean){}
+-> public void update(UserBean bean){}
+-> public List search(UserBean bean){}
+-> public List search(UserBean bean,int pageNo, int pageSize){}
+-> public List list(){}
+-> public List list(int pageNo, int pageSize){}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Business Primarey key ?
+
+-> It contains Business information and it is related with database records.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Non-Business Primary Key ?
+
+-> It does not contain business information and it is not related with database.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Referencial Integrity ?
+
+-> It ensure that relationship between two tables remains synchronized during update or Delete operations.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Javadoc ?
+
+-> Javadoc is a documentation which helps other developer to understand the project.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is Custom Exception ?
+
+-> Custom Exception is created by developer. We have created own exception classes by extends Exception class.
+-> We have created 4 custom exception :-
+  1) ApplicationException, 
+  2) RecordNotFoundException, 
+  3) DuplicateRecordException, 
+  4) DataBaseException.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Defference between forword and sendRedirect ?
+
+-> Method forward() of request dispatcher object is used to forward request from one servlet to another servlet.
+-> Method sendRedirect() of response object is used to generate new request always and sent to another servlet.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Defference between String Buffer & String Builder ?
+
+-> StringBuffer is synchronized and thread safe and used in multi user system
+-> StringBuilder is Asychronized and not thread safe and used in single user system
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Defference between Static Polymorphism & Dynamic Polymorphism ?
+
+-> Static Polymorphism is done by overloadding and Dynamic Polymorphism is done by method overriding.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is BaseBean ?
+
+-> BaseBean is a parent class of all bean and it contains generic attributes.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is BaseCtl ?
+
+-> BaseCtl is parent ctl of all ctl and it contain generic work flow, generic operation, generic constants.
+
+   Generic Work flow provides by service method.
+   Generic Operation provides by basectl methods. such as preload, validate, populateBean, getView.
+   Generic Constants provides by all buttons.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is design pattern ?
+
+-> Standarded problems have standarded solution is called design patterns.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Design Patterns you have used in your Project04 ?
+
+   1. Singleton design pattern :- The class which have only one instance in thier lifetime are singleton classes. (JDBCDataSource)
+   2. Builder Design pattern   :- Create complex object using simple object using step by step approach. (EmailBuilder)
+   3. Factory Design Pattern   :- The class that has ability to Create object of another class is called Factory class and follows factory design pattern.
+   4. FrontCtl Design Pattern  :- (FrontController)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is <jsp:useBean> ?
+
+-> it is a another way to create a bean class object on JSP Pages.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How many interface have you used in your project ?
+
+-> DropDownListBean.java
+-> ORSView.java
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How many abstract class have you used in your project ?
+
+-> BaseBean
+-> BaseCtl(getView)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is ACID properties ?
+
+-> Atomicity means all or nothing
+-> Consistency means it makes sure that data is in consistent state.
+-> Isolation means Transactions are independent
+-> Durability means Committed data never lost
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is the build ?
+
+-> It is whole compile code of entire application.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Who generates the war file ?
+
+-> Deployment Lead
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Why BaseBean is abstract class in your project ?
+
+-> Because we do not define two method of DropDownListBean getKey() and getValue().
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what are the implicit objects in jsp ?
+
+1. request(HttpServletRequest)
+2. response(HttpServletResponse)
+3. session(HttpSession)
+4. application(PageContext)
+5. page(current jsp)
+6. pageContext(PageContext)
+7. out(JspWriter) 
+8. exception(Throwable)
+9. config(ServletConfig)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is debugging ?
+
+-> Debugging is a process by which developer check the flow of program.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How to perform debugging ?
+
+-> ctrl + shift + B = to add and remove break point
+-> F11 = to start debugging
+-> F5 = source code to source code
+-> F6   Attribute and variable debugging 
+-> F7 = Single steping 
+-> F8 = Breakpoint to Breakpoint
+-> ctrl + F8 = to switch prospective window
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is servlet lifecycle ?
+
+-> init()
+-> service()
+-> destroy()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q. What is the JSP lifecycle ?
+
+-> jspInit()
+-> _jspService()
+-> jspDestroy()
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What is log4j ?
+
+-> Log4j stands for logging message. Logging means record your program message at console, file, network and database.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Components of log4j ?
+
+-> log4j has three component 
+1. Logger : Responsible for capturing logging information.
+2. Appender : Responsible for publishing logging information to various preferred destinations.
+3. Layout : Responsible for formatting logging information in different styles.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is Levels of Log4j ?
+
+-> Levels of Log4j :-
+
+1. Debug Level (Lowest priroty  and Development phase )
+2. Info Level (QA)
+3. Warn Level (PE)
+4. Error Level 
+5. Fatal Level
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How many environment are there in Log4j framework ?
+
+-> Development (Debug Level)
+-> Quality Assurance (Info Level)
+-> Production Environment (Warn Level).	
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. How to disable Log4j messages ?
+
+-> In Log4j.propeties file :-
+-> log4j.rootLogger = OFF, file, stdout;
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is Rolling File Appender in Log4J ?
+
+-> Rolling file appender configured to create new log file every day or create a file when given file size is finished.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is appender in Log4j and types of appender ?
+
+-> Appender is an object that sends log messages to their final destination. 
+1. Console Appender
+2. RollingFile Appender
+3. DailyRollingFileAppender
+4. ExternalRollingFileAppender
+5. FileAppender
+6. JDBCAppender
+7. NullAppender
+8. SMTPAppender
+9. SocketAppender
+10.TelnetAppender
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Types of Layouts ?
+
+1. DateLayout
+2. HTMLLayout
+3. PatternLayout
+4. SimpleLayout
+5. XMLLayout 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. what is the pattern layout in Log4j and its symbolic representation explain ?
+
+-> layouts: Responsible for formatting logging information in different styles.
+
+-> log4j.appender.file.layout.ConversionPattern = %d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+-> %d{yyyy-MM-dd HH:mm:ss} : It displays the date and time of the log entry in the format "yyyy-MM-dd HH:mm:ss" (year-month-day hour:minute:second).
+
+-> %-5p : It displays the log level left-aligned and takes up a width of 5 characters. For example, "DEBUG" or "ERROR" would be displayed as "DEBUG" or "ERROR", respectively.
+
+-> %C{1}:%L : This represents the class and line number from where the log message originated. %C{1} displays only the class name (without package), and %L displays the line number.
+
+-> - () : A hyphen character is used to separate the log message content from the log level, class name, and line number.
+
+-> %m%n : The %m specifier represents the actual log message content, and %n adds a newline character at the end of each log entry.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. What are MVC Guidelines?
+02. What is the difference between Statement and PreparedStatement?
+03. What is a CallableStatement?
+04. How do you create a custom Checked and Unchecked Exception class in Java?
+05. What is the difference between Checked and Unchecked Exceptions?
+06. What are Class, Object, Variable, Constructor, Method, final, finally, and finalize in Java?
+07. What is OOP (Object-Oriented Programming)?
+08. What are the key concepts of OOP?
+09. What is the difference between Overloading and Overriding?
+10. What is JDBC?
+11. What is the difference between GET and POST?
+12. What is a Transaction, and how are Transactions handled in your application?
+13. How do you configure Log4j in your application?
+14. What is a Front Controller and how is it applied?
+15. How is a Session tracked?
+16. What are JSP Elements?
+17. What is a JavaBean?
+18. What is the Servlet Hierarchy?
+19. What is a WAR file and how do you create it?
+20. What is the difference between JBoss and Tomcat?
+21. What is the difference between Web Server & Application Server?
+22. What is normalization?
+23. What is DCP?
+24. What is the use of DCP?
+
