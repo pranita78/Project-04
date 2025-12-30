@@ -102,6 +102,12 @@ public interface ORSView {
     public String DOCTOR_LIST_VIEW = PAGE_FOLDER + "/DoctorListView.jsp";
     public String DOCTOR_LIST_CTL = APP_CONTEXT + "/ctl/DoctorListCtl";
     
+    public String ACCOUNT_VIEW = PAGE_FOLDER + "/AccountView.jsp";
+    public String ACCOUNT_CTL = APP_CONTEXT + "/ctl/AccountCtl";
+    
+    public String ACCOUNT_LIST_VIEW = PAGE_FOLDER + "/AccountListView.jsp";
+    public String ACCOUNT_LIST_CTL = APP_CONTEXT + "/ctl/AccountListCtl";
+    
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 
 }

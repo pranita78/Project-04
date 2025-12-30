@@ -108,8 +108,7 @@
 	  <a href="<%=ORSView.FACULTY_CTL%>">Add Faculty</a> | 
 	  <a href="<%=ORSView.FACULTY_LIST_CTL%>">Faculty List</a> <%
  	}
- 		if (user.getRoleId() == RoleBean.COLLEGE || user.getRoleId() == RoleBean.FACULTY
- 				|| user.getRoleId() == RoleBean.ADMIN) {
+ 		if (user.getRoleId() == RoleBean.COLLEGE || user.getRoleId() == RoleBean.FACULTY || user.getRoleId() == RoleBean.ADMIN) {
  %> | <a href="<%=ORSView.TIMETABLE_CTL%>">Add Timetable</a> | 
       <a href="<%=ORSView.TIMETABLE_LIST_CTL%>">Timetable List</a> <%
  	}
