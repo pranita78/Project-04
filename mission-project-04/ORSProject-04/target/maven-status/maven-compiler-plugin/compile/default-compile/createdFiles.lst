@@ -1,3 +1,4 @@
+in\co\rays\proj4\bean\AccountBean.class
 in\co\rays\proj4\util\HTMLUtility.class
 in\co\rays\proj4\controller\WelcomeCtl.class
 in\co\rays\proj4\controller\ORSView.class
@@ -17,6 +18,7 @@ in\co\rays\proj4\model\TimetableModel.class
 in\co\rays\proj4\model\PatientModel.class
 in\co\rays\proj4\bean\MarksheetBean.class
 in\co\rays\proj4\controller\TimetableListCtl.class
+in\co\rays\proj4\controller\AccountListCtl.class
 in\co\rays\proj4\test\TestRoleModel.class
 in\co\rays\proj4\test\TestUserModel.class
 in\co\rays\proj4\controller\PatientCtl.class
@@ -54,10 +56,12 @@ in\co\rays\proj4\controller\RoleListCtl.class
 in\co\rays\proj4\controller\RoleCtl.class
 in\co\rays\proj4\controller\StudentCtl.class
 in\co\rays\proj4\bean\UserBean.class
+in\co\rays\proj4\controller\AccountCtl.class
 in\co\rays\proj4\controller\MarksheetCtl.class
 in\co\rays\proj4\controller\ForgetPasswordCtl.class
 in\co\rays\proj4\model\CourseModel.class
 in\co\rays\proj4\controller\TimetableCtl.class
+in\co\rays\proj4\model\AccountModel.class
 in\co\rays\proj4\bean\CollegeBean.class
 in\co\rays\proj4\bean\PatientBean.class
 in\co\rays\proj4\controller\FacultyListCtl.class
