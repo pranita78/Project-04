@@ -37,8 +37,9 @@ public class AccountCtl extends BaseCtl {
         boolean pass = true;
 
         if (DataValidator.isNull(request.getParameter("accountNo"))) {
-            request.setAttribute("accountNo",
-                    PropertyReader.getValue("error.require", "Account No"));
+           request.setAttribute("error.accountNo",
+    PropertyReader.getValue("error.require", "Account No"));
+
             pass = false;
         }
 
