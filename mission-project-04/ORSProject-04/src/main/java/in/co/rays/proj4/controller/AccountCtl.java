@@ -48,13 +48,18 @@ if (DataValidator.isNull(accountNo)) {
         PropertyReader.getValue("error.require", "Account Number"));
     pass = false;
 }
-
+else if (!accountNo.trim().toUpperCase().matches("^[A-Z0-9]{16}$")) {
+    request.setAttribute("accountNo",
+            "Account No must be exactly 16 characters (uppercase letters & digits)");
+    pass = false;
+}
     // baaki fields
     if (DataValidator.isNull(request.getParameter("accountType"))) {
         request.setAttribute("accountType",
                 PropertyReader.getValue("error.require", "Account Type"));
         pass = false;
     }
+	
 
     if (DataValidator.isNull(request.getParameter("bankName"))) {
         request.setAttribute("bankName",
