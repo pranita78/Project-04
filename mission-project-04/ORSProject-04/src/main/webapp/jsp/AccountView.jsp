@@ -91,11 +91,12 @@ input[type=number] {
                         placeholder="Enter Account No"
                         value="<%=DataUtility.getStringData(bean.getAccountNo())%>">  -->
 
-						<input type="text" name="accountNo"
-                              onkeyup="this.value=this.value.toUpperCase()"
-                               maxlength="16"
-                              placeholder="Enter Account No"
-                       value="<%=DataUtility.getStringData(bean.getAccountNo())%>">
+					<input type="text" name="accountNo"
+       required
+       maxlength="16"
+       onkeyup="this.value=this.value.toUpperCase()"
+       placeholder="Enter Account No"
+       value="<%=DataUtility.getStringData(bean.getAccountNo())%>">
 
 
 
