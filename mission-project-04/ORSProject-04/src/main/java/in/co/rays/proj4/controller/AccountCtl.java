@@ -20,149 +20,140 @@ import in.co.rays.proj4.util.ServletUtility;
 
 @WebServlet(name = "AccountCtl", urlPatterns = { "/ctl/AccountCtl" })
 public class AccountCtl extends BaseCtl {
+	
 
 	@Override
 	protected void preload(HttpServletRequest request) {
 		HashMap<String, String> map = new HashMap<String, String>();
 		map.put("Saving", "Saving");
 		map.put("Current", "Current");
+		map.put("Business", "Business");
 		request.setAttribute("map", map);
 	}
 
-	@Override
-	protected boolean validate(HttpServletRequest request) {
+    @Override
+    protected boolean validate(HttpServletRequest request) {
 
-		boolean pass = true;
+        boolean pass = true;
 
-//		if (DataValidator.isNull(request.getParameter("accountNo"))) {
-//			request.setAttribute("accountNo", PropertyReader.getValue("error.require", "Account No"));
-//			pass = false;
-//		}
+        if (DataValidator.isNull(request.getParameter("accountNo"))) {
+            request.setAttribute("accountNo",
+                    PropertyReader.getValue("error.require", "Account No"));
+            pass = false;
+        }
 
-		
-	
-		String accountNo = request.getParameter("accountNo");
+        if (DataValidator.isNull(request.getParameter("accountType"))) {
+            request.setAttribute("accountType",
+                    PropertyReader.getValue("error.require", "Account Type"));
+            pass = false;
+        }
 
-		if (DataValidator.isNull(accountNo)) {
-		    request.setAttribute("accountNo", PropertyReader.getValue("error.require", "Account Number"));
-		    pass = false;
-		} else if (!accountNo.matches("^(?:[A-Z]{5}[0-9]{11}|[A-Z]{4}[0-9][A-Z][0-9]{10}|[A-Z]{3}[0-9]{2}[A-Z]{2}[0-9]{9}|[A-Z]{2}[0-9]{3}[A-Z]{3}[0-9]{8}|[A-Z]{1}[0-9]{4}[A-Z]{4}[0-9]{7}|[0-9]{5}[A-Z]{5}[0-9]{6}|[0-9]{6}[A-Z]{5}[0-9]{5}|[0-9]{7}[A-Z]{5}[0-9]{4}|[0-9]{8}[A-Z]{5}[0-9]{3}|[0-9]{9}[A-Z]{5}[0-9]{2}|[0-9]{10}[A-Z]{5}[0-9]{1}|[0-9]{11}[A-Z]{5})$")) {
-		    request.setAttribute("accountNo","Account No must be 16 character(uppercase & digits)");
-		    pass = false;
-		}
+        if (DataValidator.isNull(request.getParameter("bankName"))) {
+            request.setAttribute("bankName",
+                    PropertyReader.getValue("error.require", "Bank Name"));
+            pass = false;
+        }
 
-		
-		
+        if (DataValidator.isNull(request.getParameter("balance"))) {
+            request.setAttribute("balance",
+                    PropertyReader.getValue("error.require", "Balance"));
+            pass = false;
+        }
 
-		if (DataValidator.isNull(request.getParameter("accountType"))) {
-			request.setAttribute("accountType", PropertyReader.getValue("error.require", "Account Type"));
-			pass = false;
-		}
+        return pass;
+    }
 
-		if (DataValidator.isNull(request.getParameter("bankName"))) {
-			request.setAttribute("bankName", PropertyReader.getValue("error.require", "Bank Name"));
-			pass = false;
-		}
+    @Override
+    protected BaseBean populateBean(HttpServletRequest request) {
 
-		if (DataValidator.isNull(request.getParameter("balance"))) {
-			request.setAttribute("balance", PropertyReader.getValue("error.require", "Balance"));
-			pass = false;
-		}
+        AccountBean bean = new AccountBean();
 
-		return pass;
-	}
+        bean.setId(DataUtility.getLong(request.getParameter("id")));
+        bean.setAccountNo(DataUtility.getString(request.getParameter("accountNo")));
+        bean.setAccountType(DataUtility.getString(request.getParameter("accountType")));
+        bean.setBankName(DataUtility.getString(request.getParameter("bankName")));
+        bean.setBalance(DataUtility.getString(request.getParameter("balance")));
 
-	@Override
-	protected BaseBean populateBean(HttpServletRequest request) {
+        populateDTO(bean, request);
 
-		AccountBean bean = new AccountBean();
+        return bean;
+    }
 
-		bean.setId(DataUtility.getLong(request.getParameter("id")));
-		bean.setAccountNo(DataUtility.getString(request.getParameter("accountNo")));
-		bean.setAccountType(DataUtility.getString(request.getParameter("accountType")));
-		bean.setBankName(DataUtility.getString(request.getParameter("bankName")));
-		bean.setBalance(DataUtility.getString(request.getParameter("balance")));
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-		populateDTO(bean, request);
+        long id = DataUtility.getLong(request.getParameter("id"));
+        AccountModel model = new AccountModel();
 
-		return bean;
-	}
+        if (id > 0) {
+            try {
+                AccountBean bean = model.findByPk(id);
+                ServletUtility.setBean(bean, request);
+            } catch (ApplicationException e) {
+                e.printStackTrace();
+                ServletUtility.handleException(e, request, response);
+                return;
+            }
+        }
+        ServletUtility.forward(getView(), request, response);
+    }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-		long id = DataUtility.getLong(request.getParameter("id"));
-		AccountModel model = new AccountModel();
+        String op = DataUtility.getString(request.getParameter("operation"));
+        AccountModel model = new AccountModel();
+        long id = DataUtility.getLong(request.getParameter("id"));
 
-		if (id > 0) {
-			try {
-				AccountBean bean = model.findByPk(id);
-				ServletUtility.setBean(bean, request);
-			} catch (ApplicationException e) {
-				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
-				return;
-			}
-		}
-		ServletUtility.forward(getView(), request, response);
-	}
+        if (OP_SAVE.equalsIgnoreCase(op)) {
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+            AccountBean bean = (AccountBean) populateBean(request);
 
-		String op = DataUtility.getString(request.getParameter("operation"));
-		AccountModel model = new AccountModel();
-		long id = DataUtility.getLong(request.getParameter("id"));
+            try {
+                model.add(bean);
+                ServletUtility.setBean(bean, request);
+                ServletUtility.setSuccessMessage("Data is successfully saved", request);
+            } catch (DuplicateRecordException e) {
+                ServletUtility.setBean(bean, request);
+                ServletUtility.setErrorMessage("Account No already exists", request);
+            } catch (ApplicationException e) {
+                e.printStackTrace();
+                ServletUtility.handleException(e, request, response);
+                return;
+            }
 
-		if (OP_SAVE.equalsIgnoreCase(op)) {
+        } else if (OP_UPDATE.equalsIgnoreCase(op)) {
 
-			AccountBean bean = (AccountBean) populateBean(request);
+            AccountBean bean = (AccountBean) populateBean(request);
 
-			try {
-				model.add(bean);
-				ServletUtility.setBean(bean, request);
-				ServletUtility.setSuccessMessage("Data is successfully saved", request);
-			} catch (DuplicateRecordException e) {
-				ServletUtility.setBean(bean, request);
-				ServletUtility.setErrorMessage("Account No already exists", request);
-			} catch (ApplicationException e) {
-				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
-				return;
-			}
-
-		} else if (OP_UPDATE.equalsIgnoreCase(op)) {
-
-			AccountBean bean = (AccountBean) populateBean(request);
-
-			try {
-				if (id > 0) {
-					model.update(bean);
-				}
-				ServletUtility.setBean(bean, request);
-				ServletUtility.setSuccessMessage("Data is successfully updated", request);
-			} catch (DuplicateRecordException e) {
-				ServletUtility.setBean(bean, request);
-				ServletUtility.setErrorMessage("Account No already exists", request);
-			} catch (ApplicationException e) {
-				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
-				return;
-			}
-		} else if (OP_CANCEL.equalsIgnoreCase(op)) {
+            try {
+                if (id > 0) {
+                    model.update(bean);
+                }
+                ServletUtility.setBean(bean, request);
+                ServletUtility.setSuccessMessage("Data is successfully updated", request);
+            } catch (DuplicateRecordException e) {
+                ServletUtility.setBean(bean, request);
+                ServletUtility.setErrorMessage("Account No already exists", request);
+            } catch (ApplicationException e) {
+                e.printStackTrace();
+                ServletUtility.handleException(e, request, response);
+                return;
+            }
+        } else if (OP_CANCEL.equalsIgnoreCase(op)) {
 			ServletUtility.redirect(ORSView.ACCOUNT_LIST_CTL, request, response);
 			return;
-		} else if (OP_RESET.equalsIgnoreCase(op)) {
-			ServletUtility.redirect(ORSView.ACCOUNT_CTL, request, response);
-			return;
-		}
+        }
+        else if (OP_RESET.equalsIgnoreCase(op)) {
+            ServletUtility.redirect(ORSView.ACCOUNT_CTL, request, response);
+            return;
+        }
 
-		ServletUtility.forward(getView(), request, response);
-	}
+        ServletUtility.forward(getView(), request, response);
+    }
 
-	@Override
-	protected String getView() {
-		return ORSView.ACCOUNT_VIEW;
-	}
+    @Override
+    protected String getView() {
+        return ORSView.ACCOUNT_VIEW;
+    }
 }
-
