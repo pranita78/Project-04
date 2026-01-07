@@ -1,3 +1,4 @@
+ 
 package in.co.rays.proj4.controller;
 
 import java.io.IOException;
@@ -44,10 +45,6 @@ public class AccountCtl extends BaseCtl {
             request.setAttribute("accountNo",
                     PropertyReader.getValue("error.require", "Account No"));
             pass = false;
-        }else if(!request.getParameter("accountNo").equals("^[A-Z]{3}[0-9]{3}$")) {
-        	 request.setAttribute("accountNo",
-                     PropertyReader.getValue("error.require", "Account No"));
-        	 pass = false;
         }
 
         if (DataValidator.isNull(request.getParameter("accountType"))) {
