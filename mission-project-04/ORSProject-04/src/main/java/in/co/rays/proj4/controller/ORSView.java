@@ -115,18 +115,12 @@ public interface ORSView {
     public String ITEM_INFORMATION_LIST_CTL = APP_CONTEXT + "/ctl/ItemInformationListCtl";
     
    
-    
-   
- // Bank Module
+ // Bank
     public String BANK_VIEW = PAGE_FOLDER + "/BankView.jsp";
     public String BANK_CTL = APP_CONTEXT + "/ctl/BankCtl";
-    
-    
+     
     public String BANK_LIST_VIEW = PAGE_FOLDER + "/BankListView.jsp";
     public String BANK_LIST_CTL = APP_CONTEXT + "/ctl/BankListCtl";
-
-
-    
     
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 

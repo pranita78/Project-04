@@ -19,6 +19,7 @@ import in.co.rays.proj4.util.ServletUtility;
 /**
  * @author Pranita Gayakward
  */
+
 @WebServlet(name = "BankListCtl", urlPatterns = { "/ctl/BankListCtl" })
 public class BankListCtl extends BaseCtl {
 

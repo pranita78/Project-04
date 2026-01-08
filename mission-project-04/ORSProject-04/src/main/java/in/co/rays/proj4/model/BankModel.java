@@ -15,6 +15,7 @@ import in.co.rays.proj4.util.JDBCDataSource;
 /**
  * @author Pranita Gayakward
  */
+
 public class BankModel {
 
 	/* ================= Next PK ================= */

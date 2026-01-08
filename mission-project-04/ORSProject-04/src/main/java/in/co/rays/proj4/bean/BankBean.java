@@ -2,6 +2,7 @@ package in.co.rays.proj4.bean;
 
 public class BankBean extends BaseBean {
 
+	
     private String bankName;
     private String branchName;
     private String accountHolderName;
