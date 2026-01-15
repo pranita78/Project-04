@@ -108,11 +108,7 @@ public interface ORSView {
     public String ACCOUNT_LIST_VIEW = PAGE_FOLDER + "/AccountListView.jsp";
     public String ACCOUNT_LIST_CTL = APP_CONTEXT + "/ctl/AccountListCtl";
     
-    public String ITEM_INFORMATION_VIEW = PAGE_FOLDER + "/ItemInformationView.jsp";
-    public String ITEM_INFORMATION_CTL = APP_CONTEXT + "/ctl/ItemInformationCtl";
 
-    public String ITEM_INFORMATION_LIST_VIEW = PAGE_FOLDER + "/ItemInformationView.jsp";
-    public String ITEM_INFORMATION_LIST_CTL = APP_CONTEXT + "/ctl/ItemInformationListCtl";
     
   
     public String BANK_VIEW = PAGE_FOLDER + "/BankView.jsp";
