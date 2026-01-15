@@ -102,19 +102,19 @@ public interface ORSView {
     public String DOCTOR_LIST_VIEW = PAGE_FOLDER + "/DoctorListView.jsp";
     public String DOCTOR_LIST_CTL = APP_CONTEXT + "/ctl/DoctorListCtl";
     
+    //account
+    
     public String ACCOUNT_VIEW = PAGE_FOLDER + "/AccountView.jsp";
     public String ACCOUNT_CTL = APP_CONTEXT + "/ctl/AccountCtl";
     
     public String ACCOUNT_LIST_VIEW = PAGE_FOLDER + "/AccountListView.jsp";
     public String ACCOUNT_LIST_CTL = APP_CONTEXT + "/ctl/AccountListCtl";
     
-    public String ITEM_INFORMATION_VIEW = PAGE_FOLDER + "/ctl/ItemInformationView.jsp";
-	public String ITEM_INFORMATION_CTL = APP_CONTEXT + "/ctl/ItemInformationCtl";
-	
-	public String ITEM_INFORMATION_LIST_VIEW = PAGE_FOLDER + "/ctl/ItemInformationListView.jsp";
-    public String ITEM_INFORMATION_LIST_CTL = APP_CONTEXT + "/ctl/ItemInformationListCtl";
     
-  
+    
+  //bank
+    
+    
     public String BANK_VIEW = PAGE_FOLDER + "/BankView.jsp";
     public String BANK_CTL = APP_CONTEXT + "/ctl/BankCtl";
      
