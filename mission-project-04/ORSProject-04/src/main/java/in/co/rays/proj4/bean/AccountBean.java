@@ -2,11 +2,11 @@ package in.co.rays.proj4.bean;
 
 	public class AccountBean extends BaseBean {
 
-	   
 	    private String accountNo;
 	    private String accountType;
 	    private String bankName;
 	    private String balance;
+	    
 
 	    public String getAccountNo() {
 	        return accountNo;
@@ -57,4 +57,6 @@ package in.co.rays.proj4.bean;
 	    public String getValue() {
 	        return accountNo;
 	    }
+	
 	}
+	

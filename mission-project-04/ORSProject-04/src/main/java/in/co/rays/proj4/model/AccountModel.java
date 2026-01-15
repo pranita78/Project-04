@@ -17,6 +17,7 @@ import in.co.rays.proj4.util.JDBCDataSource;
  * @author Pranita gayakward
  *
  */
+
 public class AccountModel {
 
     public Integer nextPk() throws DatabaseException {
@@ -298,4 +299,6 @@ public class AccountModel {
 
 	    return list;
 	}
+
 }
+

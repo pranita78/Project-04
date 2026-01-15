@@ -19,10 +19,13 @@ import in.co.rays.proj4.util.DataValidator;
 import in.co.rays.proj4.util.PropertyReader;
 import in.co.rays.proj4.util.ServletUtility;
 
+
 /**
  * @author Pranita gayakward
  *
  */
+
+
 @WebServlet(name = "AccountCtl", urlPatterns = { "/ctl/AccountCtl" })
 public class AccountCtl extends BaseCtl {
 	
@@ -161,4 +164,5 @@ public class AccountCtl extends BaseCtl {
     protected String getView() {
         return ORSView.ACCOUNT_VIEW;
     }
+
 }

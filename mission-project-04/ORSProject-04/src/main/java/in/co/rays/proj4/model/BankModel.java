@@ -18,7 +18,7 @@ import in.co.rays.proj4.util.JDBCDataSource;
 
 public class BankModel {
 
-	/* ================= Next PK ================= */
+	
 
 	public Integer nextPk() throws DatabaseException {
 		Connection conn = null;
@@ -43,8 +43,8 @@ public class BankModel {
 		return pk + 1;
 	}
 
-	/* ================= Add ================= */
-
+	
+	
 	public long add(BankBean bean) throws ApplicationException, DuplicateRecordException {
 
 		Connection conn = null;
@@ -89,8 +89,8 @@ public class BankModel {
 		return pk;
 	}
 
-	/* ================= Update ================= */
-
+	
+	
 	public void update(BankBean bean) throws ApplicationException, DuplicateRecordException {
 
 		Connection conn = null;
@@ -134,8 +134,8 @@ public class BankModel {
 		}
 	}
 
-	/* ================= Delete ================= */
-
+	
+	
 	public void delete(BankBean bean) throws ApplicationException {
 		Connection conn = null;
 
@@ -162,7 +162,7 @@ public class BankModel {
 		}
 	}
 
-	/* ================= Find By PK ================= */
+	
 
 	public BankBean findByPk(long pk) throws ApplicationException {
 
@@ -199,7 +199,7 @@ public class BankModel {
 		return bean;
 	}
 
-	/* ================= Find By Mobile ================= */
+	
 
 	public BankBean findByMobileNo(String mobileNo) throws ApplicationException {
 
@@ -236,7 +236,7 @@ public class BankModel {
 		return bean;
 	}
 
-	/* ================= List & Search ================= */
+	
 
 	public List<BankBean> list() throws ApplicationException {
 		return search(null, 0, 0);
@@ -305,4 +305,7 @@ public class BankModel {
 		}
 		return list;
 	}
+
 }
+
+

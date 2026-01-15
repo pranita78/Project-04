@@ -24,8 +24,7 @@ import in.co.rays.proj4.util.ServletUtility;
 @WebServlet(name = "BankCtl", urlPatterns = { "/ctl/BankCtl" })
 public class BankCtl extends BaseCtl {
 
-    /* ================= Validation ================= */
-
+   
     @Override
     protected boolean validate(HttpServletRequest request) {
 
@@ -56,7 +55,7 @@ public class BankCtl extends BaseCtl {
                     PropertyReader.getValue("error.require", "Mobile No"));
             pass = false;
         } 
-        // Indian mobile number validation (10 digits, starts with 6-9)
+        
         else if (!mobile.matches("^[6-9][0-9]{9}$")) {
             request.setAttribute("mobileNo",
                     PropertyReader.getValue("error.invalid", "Mobile No"));
@@ -66,7 +65,7 @@ public class BankCtl extends BaseCtl {
         return pass;
     }
 
-    /* ================= Populate Bean ================= */
+   
 
     @Override
     protected BaseBean populateBean(HttpServletRequest request) {
@@ -85,7 +84,6 @@ public class BankCtl extends BaseCtl {
         return bean;
     }
 
-    /* ================= GET ================= */
 
     @Override
     protected void doGet(HttpServletRequest request,
@@ -107,8 +105,7 @@ public class BankCtl extends BaseCtl {
         ServletUtility.forward(getView(), request, response);
     }
 
-    /* ================= POST ================= */
-
+  
     @Override
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
@@ -173,10 +170,11 @@ public class BankCtl extends BaseCtl {
         ServletUtility.forward(getView(), request, response);
     }
 
-    /* ================= View ================= */
-
+    
     @Override
     protected String getView() {
         return ORSView.BANK_VIEW;
     }
 }
+
+

@@ -23,8 +23,8 @@ import in.co.rays.proj4.util.ServletUtility;
 @WebServlet(name = "BankListCtl", urlPatterns = { "/ctl/BankListCtl" })
 public class BankListCtl extends BaseCtl {
 
-    /* ================= Populate Bean ================= */
-
+    
+	
     @Override
     protected BaseBean populateBean(HttpServletRequest request) {
 
@@ -39,7 +39,7 @@ public class BankListCtl extends BaseCtl {
         return bean;
     }
 
-    /* ================= GET ================= */
+    
 
     @Override
     protected void doGet(HttpServletRequest request,
@@ -74,7 +74,7 @@ public class BankListCtl extends BaseCtl {
         }
     }
 
-    /* ================= POST ================= */
+   
 
     @Override
     protected void doPost(HttpServletRequest request,
@@ -163,10 +163,14 @@ public class BankListCtl extends BaseCtl {
         }
     }
 
-    /* ================= View ================= */
+    
 
     @Override
     protected String getView() {
         return ORSView.BANK_LIST_VIEW;
     }
+    
 }
+
+
+
