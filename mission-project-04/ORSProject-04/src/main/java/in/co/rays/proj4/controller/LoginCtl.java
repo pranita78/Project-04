@@ -109,7 +109,10 @@ public class LoginCtl extends BaseCtl {
 				}
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+			//	ServletUtility.handleException(e, request, response);
+				
+				ServletUtility.setErrorMessage("oops.. something went wrong :(", request);
+				ServletUtility.forward(getView(), request, response);
 				return;
 			}
 		} else if (OP_SIGN_UP.equalsIgnoreCase(op)) {
