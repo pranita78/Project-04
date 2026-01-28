@@ -149,7 +149,7 @@ public class CollegeCtl extends BaseCtl {
 			ServletUtility.redirect(ORSView.COLLEGE_CTL, request, response);
 			return;
 		}
-		ServletUtility.forward(getView(), request, response);
+		ServletUtility.handleExceptionDB(getView(), request, response);
 	}
 
 	@Override

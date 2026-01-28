@@ -117,7 +117,7 @@ public class CourseCtl extends BaseCtl {
 				ServletUtility.setErrorMessage("Course already exists", request);
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 		} else if (OP_CANCEL.equalsIgnoreCase(op)) {

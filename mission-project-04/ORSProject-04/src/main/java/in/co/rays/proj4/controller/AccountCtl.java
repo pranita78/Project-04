@@ -126,7 +126,7 @@ public class AccountCtl extends BaseCtl {
                 ServletUtility.setErrorMessage("Account No already exists", request);
             } catch (ApplicationException e) {
                 e.printStackTrace();
-                ServletUtility.handleException(e, request, response);
+                ServletUtility.handleExceptionDB(getView(), request, response);
                 return;
             }
 
@@ -145,7 +145,7 @@ public class AccountCtl extends BaseCtl {
                 ServletUtility.setErrorMessage("Account No already exists", request);
             } catch (ApplicationException e) {
                 e.printStackTrace();
-                ServletUtility.handleException(e, request, response);
+                ServletUtility.handleExceptionDB(getView(), request, response);
                 return;
             }
         } else if (OP_CANCEL.equalsIgnoreCase(op)) {

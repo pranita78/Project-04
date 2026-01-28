@@ -1,6 +1,7 @@
 package in.co.rays.proj4.controller;
 import org.apache.log4j.Logger;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -28,7 +29,7 @@ public class UserListCtl extends BaseCtl {
 			List roleList = roleModel.list();
 			request.setAttribute("roleList", roleList);
 		} catch (ApplicationException e) {
-			e.printStackTrace();
+			request.setAttribute("roleList", new ArrayList());
 		}
 	}
 
@@ -71,8 +72,7 @@ public class UserListCtl extends BaseCtl {
 			ServletUtility.forward(getView(), request, response);
 
 		} catch (ApplicationException e) {
-			e.printStackTrace();
-			ServletUtility.handleException(e, request, response);
+		 ServletUtility.handleExceptionDBList(getView(), bean, pageNo, pageSize, request, response);
 			return;
 		}
 	}

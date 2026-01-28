@@ -182,7 +182,7 @@ public class FacultyCtl extends BaseCtl {
 				ServletUtility.setErrorMessage("Email already exists", request);
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 		} else if (OP_CANCEL.equalsIgnoreCase(op)) {

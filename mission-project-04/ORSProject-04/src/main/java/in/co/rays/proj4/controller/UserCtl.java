@@ -2,6 +2,8 @@ package in.co.rays.proj4.controller;
 
 import java.io.IOException;
 import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -32,7 +34,7 @@ public class UserCtl extends BaseCtl {
 			List<RoleBean> roleList = roleModel.list();
 			request.setAttribute("roleList", roleList);
 		} catch (ApplicationException e) {
-			e.printStackTrace();
+			request.setAttribute("roleList", new ArrayList());
 		}
 	}
 
@@ -180,7 +182,7 @@ public class UserCtl extends BaseCtl {
 				ServletUtility.setErrorMessage("Login Id already exists", request);
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 		}else if (OP_UPDATE.equalsIgnoreCase(op)) {
@@ -196,7 +198,7 @@ public class UserCtl extends BaseCtl {
 				ServletUtility.setErrorMessage("Login Id already exists", request);
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 		} else if (OP_CANCEL.equalsIgnoreCase(op)) {

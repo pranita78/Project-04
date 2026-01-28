@@ -195,7 +195,7 @@ public class PatientCtl extends BaseCtl {
                 ServletUtility.setErrorMessage("Patient already exists", req);
             } catch (ApplicationException e) {
                 e.printStackTrace();
-                ServletUtility.handleException(e, req, resp);
+                ServletUtility.handleExceptionDB(getView(), req, resp);
                 return;
             }
 

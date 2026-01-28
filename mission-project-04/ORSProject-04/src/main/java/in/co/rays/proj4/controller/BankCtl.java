@@ -154,7 +154,7 @@ public class BankCtl extends BaseCtl {
 
             } catch (ApplicationException e) {
                 e.printStackTrace();
-                ServletUtility.handleException(e, request, response);
+                ServletUtility.handleExceptionDB(getView(), request, response);
                 return;
             }
 

@@ -111,7 +111,7 @@ public class SubjectCtl extends BaseCtl {
 				ServletUtility.setErrorMessage("Subject Name already exists", request);
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 		} else if (OP_UPDATE.equalsIgnoreCase(op)) {

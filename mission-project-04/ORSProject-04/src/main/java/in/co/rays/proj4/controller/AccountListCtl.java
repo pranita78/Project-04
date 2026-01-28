@@ -77,7 +77,7 @@ public class AccountListCtl extends BaseCtl {
 
         } catch (ApplicationException e) {
             e.printStackTrace();
-            ServletUtility.handleException(e, request, response);
+            ServletUtility.handleExceptionDBList(getView(), bean, pageNo, pageSize, request, response);
             return;
         }
     }

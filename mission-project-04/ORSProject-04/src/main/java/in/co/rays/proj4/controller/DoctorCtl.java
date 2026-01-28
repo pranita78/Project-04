@@ -189,7 +189,7 @@ public class DoctorCtl extends BaseCtl {
                 ServletUtility.setErrorMessage("Doctor already exists", req);
             } catch (ApplicationException e) {
                 e.printStackTrace();
-                ServletUtility.handleException(e, req, resp);
+                ServletUtility.handleExceptionDB(getView(), req, resp);
                 return;
             }
 

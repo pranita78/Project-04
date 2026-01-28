@@ -1,6 +1,7 @@
 package in.co.rays.proj4.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -29,7 +30,7 @@ public class StudentCtl extends BaseCtl {
 			List collegeList = collegeModel.list();
 			request.setAttribute("collegeList", collegeList);
 		} catch (ApplicationException e) {
-			e.printStackTrace();
+			request.setAttribute("collegeList", new ArrayList());
 		}
 	}
 
@@ -152,7 +153,7 @@ public class StudentCtl extends BaseCtl {
 				ServletUtility.setErrorMessage("Email already exists", request);
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 		} else if (OP_UPDATE.equalsIgnoreCase(op)) {

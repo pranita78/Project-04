@@ -1,6 +1,7 @@
 package in.co.rays.proj4.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -37,7 +38,9 @@ public class TimetableCtl extends BaseCtl {
 			request.setAttribute("courseList", courseList);
 
 		} catch (ApplicationException e) {
-			e.printStackTrace();
+			request.setAttribute("subjectList", new ArrayList());
+			request.setAttribute("courseList", new ArrayList());
+
 		}
 	}
 
@@ -162,7 +165,7 @@ public class TimetableCtl extends BaseCtl {
 				ServletUtility.setErrorMessage("Timetable already exist!", request);
 			} catch (ApplicationException e) {
 				e.printStackTrace();
-				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 
