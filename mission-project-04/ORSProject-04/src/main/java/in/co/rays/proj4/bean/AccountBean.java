@@ -11,6 +11,7 @@ package in.co.rays.proj4.bean;
 	    public String getAccountNo() {
 	        return accountNo;
 	    }
+	    
 
 	    
 	    public void setAccountNo(String accountNo) {

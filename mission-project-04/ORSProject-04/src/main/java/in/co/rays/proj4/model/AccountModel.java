@@ -1,3 +1,9 @@
+/**
+ * @author Pranita gayakward
+ *
+ */
+
+
 package in.co.rays.proj4.model;
 
 import java.sql.Connection;
@@ -13,11 +19,7 @@ import in.co.rays.proj4.exception.DatabaseException;
 import in.co.rays.proj4.exception.DuplicateRecordException;
 import in.co.rays.proj4.util.JDBCDataSource;
 
-/**
- * @author Pranita gayakward
- *
- */
-
+ 
 public class AccountModel {
 
     public Integer nextPk() throws DatabaseException {

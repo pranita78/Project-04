@@ -6,6 +6,7 @@ import java.util.Date;
  * @author Pranita gayakward
  *
  */
+
 public class UserBean extends BaseBean {
 
 	private String firstName;
