@@ -110,16 +110,28 @@ public interface ORSView {
     public String ACCOUNT_LIST_VIEW = PAGE_FOLDER + "/AccountListView.jsp";
     public String ACCOUNT_LIST_CTL = APP_CONTEXT + "/ctl/AccountListCtl";
     
+    // report
+    
+    public String REPORT_VIEW = PAGE_FOLDER + "/ReportView.jsp";
+    public String REPORT_CTL = APP_CONTEXT + "/ctl/ReportCtl";
+    
+    public String REPORT_LIST_VIEW = PAGE_FOLDER + "/ReportListView.jsp";
+    public String REPORT_LIST_CTL = APP_CONTEXT + "/ctl/ReportListCtl";
     
     
   //bank
-    
-    
+      
     public String BANK_VIEW = PAGE_FOLDER + "/BankView.jsp";
     public String BANK_CTL = APP_CONTEXT + "/ctl/BankCtl";
      
     public String BANK_LIST_VIEW = PAGE_FOLDER + "/BankListView.jsp";
     public String BANK_LIST_CTL = APP_CONTEXT + "/ctl/BankListCtl";
+    
+    public String MOBILE_VIEW = PAGE_FOLDER + "/MobileView.jsp";
+    public String MOBILE_CTL = APP_CONTEXT + "/ctl/MobileCtl";
+     
+    public String MOBILE_LIST_VIEW = PAGE_FOLDER + "/MobileListView.jsp";
+    public String MOBILE_LIST_CTL = APP_CONTEXT + "/ctl/MobileListCtl";
     
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 

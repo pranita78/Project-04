@@ -163,4 +163,10 @@ public class DataUtility {
 		System.out.println("\ngetTimestamp(Timestamp) Test:");
 		System.out.println("Timestamp to long: " + getTimestamp(currentTimestamp));
 	}
+
+	public static Double getDouble(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

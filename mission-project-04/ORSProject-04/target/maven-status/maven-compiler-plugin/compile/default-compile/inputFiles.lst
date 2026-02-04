@@ -9,6 +9,7 @@ C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSP
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\MarksheetBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\RoleBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\UserRegistrationCtl.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\MobileModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\MarksheetModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\CollegeModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\BankCtl.java
@@ -17,18 +18,21 @@ C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSP
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\AccountModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\util\EmailBuilder.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\SubjectListCtl.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\ReportModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\MarksheetListCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\UserBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\test\TestTimetableModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\AccountListCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\DoctorCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\CourseListCtl.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\MobileListCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\ChangePasswordCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\GetMarksheetCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\CollegeCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\CourseCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\BankBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\DropdownListBean.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\MobileCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\util\EmailUtility.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\PatientBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\PatientCtl.java
@@ -37,9 +41,11 @@ C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSP
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\MarksheetMeritListCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\WelcomeCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\util\PropertyReader.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\ReportCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\RoleListCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\util\HTMLUtility.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\test\TestCourseModel.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\MobileBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\AccountCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\test\TestRoleModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\AccountBean.java
@@ -48,6 +54,7 @@ C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSP
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\DoctorModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\LoginCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\ORSView.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\ReportListCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\test\TestSubjectModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\StudentBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\UserListCtl.java
@@ -74,6 +81,7 @@ C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSP
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\exception\RecordNotFoundException.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\RoleModel.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\model\StudentModel.java
+C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\ReportBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\controller\CollegeListCtl.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\BaseBean.java
 C:\Users\Pranita gayakward\Desktop\Rays Build\Project-04\mission-project-04\ORSProject-04\src\main\java\in\co\rays\proj4\bean\CourseBean.java

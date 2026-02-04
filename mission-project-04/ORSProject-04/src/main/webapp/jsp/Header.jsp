@@ -109,6 +109,11 @@
 	  <a href="<%=ORSView.FACULTY_LIST_CTL%>">Faculty List</a> |
 	   <a href="<%=ORSView.ACCOUNT_CTL%>">Add Account</a> |
       <a href="<%=ORSView.ACCOUNT_LIST_CTL%>">Account List</a>|
+        <a href="<%=ORSView.REPORT_CTL%>">Add Report</a> |
+      <a href="<%=ORSView.REPORT_LIST_CTL%>">Report List</a>|
+       <a href="<%=ORSView.MOBILE_CTL%>">Add Mobile</a> |
+      <a href="<%=ORSView.MOBILE_LIST_CTL%>">Mobile List</a>|
+      
 	<%--   <a href="<%=ORSView.BANK_CTL%>">Add Bank</a> |
       <a href="<%=ORSView.BANK_LIST_CTL%>">Bank List</a> |
       --%>

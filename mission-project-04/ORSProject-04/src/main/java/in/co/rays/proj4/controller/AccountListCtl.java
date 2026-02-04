@@ -33,8 +33,7 @@ public class AccountListCtl extends BaseCtl {
         request.setAttribute("map", map);
     }
 
-    
-
+  
     @Override
     protected BaseBean populateBean(HttpServletRequest request) {
 
