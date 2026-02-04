@@ -160,4 +160,5 @@ public class UserListCtl extends BaseCtl {
 	protected String getView() {
 		return ORSView.USER_LIST_VIEW;
 	}
+	
 }
