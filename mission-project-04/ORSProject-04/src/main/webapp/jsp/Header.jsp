@@ -113,6 +113,11 @@
       <a href="<%=ORSView.REPORT_LIST_CTL%>">Report List</a>|
        <a href="<%=ORSView.MOBILE_CTL%>">Add Mobile</a> |
       <a href="<%=ORSView.MOBILE_LIST_CTL%>">Mobile List</a>|
+       <a href="<%=ORSView.ATTENDANCE__CTL%>">Add Attendance</a> |
+      <a href="<%=ORSView.ATTENDANCE__LIST_CTL%>">Attendance List</a>|
+       <a href="<%=ORSView.SUPPLIER_CTL%>">Add Supplier</a> |
+      <a href="<%=ORSView.SUPPLIER_LIST_CTL%>">Supplier List</a>|
+        
       
 	<%--   <a href="<%=ORSView.BANK_CTL%>">Add Bank</a> |
       <a href="<%=ORSView.BANK_LIST_CTL%>">Bank List</a> |

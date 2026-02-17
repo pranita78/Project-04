@@ -133,6 +133,19 @@ public interface ORSView {
     public String MOBILE_LIST_VIEW = PAGE_FOLDER + "/MobileListView.jsp";
     public String MOBILE_LIST_CTL = APP_CONTEXT + "/ctl/MobileListCtl";
     
+    public String ATTENDANCE_VIEW = PAGE_FOLDER + "/AttendanceView.jsp";
+    public String ATTENDANCE__CTL = APP_CONTEXT + "/ctl/AttendanceCtl";
+     
+    public String ATTENDANCE__LIST_VIEW = PAGE_FOLDER + "/AttendanceListView.jsp";
+    public String ATTENDANCE__LIST_CTL = APP_CONTEXT + "/ctl/AttendanceListCtl";
+    
+    public String SUPPLIER_VIEW = PAGE_FOLDER + "/SupplierView.jsp";
+    public String SUPPLIER_CTL = APP_CONTEXT + "/ctl/SupplierCtl";
+
+    public String SUPPLIER_LIST_VIEW = PAGE_FOLDER + "/SupplierListView.jsp";
+    public String SUPPLIER_LIST_CTL = APP_CONTEXT + "/ctl/SupplierListCtl";
+
+    
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 
 }
