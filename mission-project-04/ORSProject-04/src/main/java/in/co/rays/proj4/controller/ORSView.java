@@ -144,7 +144,14 @@ public interface ORSView {
 
     public String SUPPLIER_LIST_VIEW = PAGE_FOLDER + "/SupplierListView.jsp";
     public String SUPPLIER_LIST_CTL = APP_CONTEXT + "/ctl/SupplierListCtl";
+    
+    public String VERSION_VIEW = PAGE_FOLDER + "/VersionView.jsp";
+    public String VERSION_CTL = APP_CONTEXT + "/ctl/VersionCtl";
 
+    public String VERSION_LIST_VIEW = PAGE_FOLDER + "/VersionListView.jsp";
+    public String VERSION_LIST_CTL = APP_CONTEXT + "/ctl/VersionListCtl";
+
+    
     
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 
