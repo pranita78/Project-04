@@ -119,6 +119,8 @@
       <a href="<%=ORSView.SUPPLIER_LIST_CTL%>">Supplier List</a>|
       <a href="<%=ORSView.VERSION_CTL%>">Add Version</a> |
       <a href="<%=ORSView.VERSION_LIST_CTL%>">Version List</a>|
+       <a href="<%=ORSView.TRAINING_CTL%>">Add Training</a> |
+      <a href="<%=ORSView.TRAINING_LIST_CTL%>">Training List</a>|
         
       
 	<%--   <a href="<%=ORSView.BANK_CTL%>">Add Bank</a> |

@@ -150,6 +150,12 @@ public interface ORSView {
 
     public String VERSION_LIST_VIEW = PAGE_FOLDER + "/VersionListView.jsp";
     public String VERSION_LIST_CTL = APP_CONTEXT + "/ctl/VersionListCtl";
+    
+    public String TRAINING_VIEW = PAGE_FOLDER + "/TrainingView.jsp";
+    public String TRAINING_CTL = APP_CONTEXT + "/ctl/TrainingCtl";
+
+    public String TRAINING_LIST_VIEW = PAGE_FOLDER + "/TrainingListView.jsp";
+    public String TRAINING_LIST_CTL = APP_CONTEXT + "/ctl/TrainingListCtl";
 
     
     
