@@ -226,4 +226,23 @@ public class DataValidator {
 		System.out.println("Date on Sunday: '10/13/2024' -> " + isSunday("10/13/2024"));
 		System.out.println("Date not on Sunday: '10/15/2024' -> " + isSunday("10/15/2024"));
 	}
+
+	public static boolean isDouble(String parameter) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public static boolean isNotificationCode(String val) {
+        String notificationReg = "^NT-\\d{3}$";
+        if (isNotNull(val)) {
+            try {
+                return val.matches(notificationReg);
+            } catch (Exception e) {
+                return false;
+            }
+        } else {
+            return false;
+        }
+
+}
 }

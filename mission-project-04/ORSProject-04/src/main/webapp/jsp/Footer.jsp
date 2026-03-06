@@ -4,7 +4,7 @@
 <style type="text/css">
 div.sticky {
 	position: -webkit-sticky;
-	position: sticky;
+	position: fixed;
 	width: 100%;
 	text-align: center;
 	bottom: 0;

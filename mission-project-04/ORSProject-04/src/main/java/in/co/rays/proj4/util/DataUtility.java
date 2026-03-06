@@ -2,6 +2,7 @@
 
 package in.co.rays.proj4.util;
 
+import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -164,9 +165,28 @@ public class DataUtility {
 		System.out.println("Timestamp to long: " + getTimestamp(currentTimestamp));
 	}
 
-	public static Double getDouble(String string) {
-		// TODO Auto-generated method stub
-		return null;
+	public static Double getDouble(String val) {
+	    Double d = null;
+	    try {
+	        if (val != null && val.trim().length() > 0) {
+	            d = Double.parseDouble(val);
+	        }
+	    } catch (Exception e) {
+	        d = null;
+	    }
+	    return d;
+	}
+
+	public static BigDecimal getBigDecimal(String val) {
+	    BigDecimal bd = null;
+	    try {
+	        if (val != null && val.trim().length() > 0) {
+	            bd = new BigDecimal(val);
+	        }
+	    } catch (Exception e) {
+	        bd = null;
+	    }
+	    return bd;
 	}
 
 }

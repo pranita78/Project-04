@@ -156,8 +156,56 @@ public interface ORSView {
 
     public String TRAINING_LIST_VIEW = PAGE_FOLDER + "/TrainingListView.jsp";
     public String TRAINING_LIST_CTL = APP_CONTEXT + "/ctl/TrainingListCtl";
-
     
+    public String INVENTORY_VIEW = PAGE_FOLDER + "/InventoryView.jsp";
+    public String INVENTORY_CTL = APP_CONTEXT + "/ctl/InventoryCtl";
+
+    public String INVENTORY_LIST_VIEW = PAGE_FOLDER + "/InventoryListView.jsp";
+    public String INVENTORY_LIST_CTL = APP_CONTEXT + "/ctl/InventoryListCtl";
+
+    public String SHIFT_VIEW = PAGE_FOLDER + "/ShiftView.jsp";
+    public String SHIFT_CTL = APP_CONTEXT + "/ctl/ShiftCtl";
+
+    public String SHIFT_LIST_VIEW = PAGE_FOLDER + "/ShiftListView.jsp";
+    public String SHIFT_LIST_CTL = APP_CONTEXT + "/ctl/ShiftListCtl";
+    
+    public String ENROLLMENT_VIEW = PAGE_FOLDER + "/EnrollmentView.jsp";
+    public String ENROLLMENT_CTL = APP_CONTEXT + "/ctl/EnrollmentCtl";
+
+    public String ENROLLMENT_LIST_VIEW = PAGE_FOLDER + "/EnrollmentListView.jsp";
+    public String ENROLLMENT_LIST_CTL = APP_CONTEXT + "/ctl/EnrollmentListCtl";
+     
+    public String EVENT_VIEW = PAGE_FOLDER + "/EventView.jsp";
+    public String EVENT_CTL = APP_CONTEXT + "/ctl/EventCtl";
+
+    public String EVENT_LIST_VIEW = PAGE_FOLDER + "/EventListView.jsp";
+    public String EVENT_LIST_CTL = APP_CONTEXT + "/ctl/EventListCtl";
+    
+    public String COURIER_VIEW = PAGE_FOLDER + "/CourierView.jsp";
+    public String COURIER_CTL = APP_CONTEXT + "/ctl/CourierCtl";
+
+    public String COURIER_LIST_VIEW = PAGE_FOLDER + "/CourierListView.jsp";
+    public String COURIER_LIST_CTL = APP_CONTEXT + "/ctl/CourierListCtl";
+    
+    public String NOTIFICATION_VIEW = PAGE_FOLDER + "/NotificationView.jsp";
+    public String NOTIFICATION_CTL = APP_CONTEXT + "/ctl/NotificationCtl";
+
+    public String NOTIFICATION_LIST_VIEW = PAGE_FOLDER + "/NotificationListView.jsp";
+    public String NOTIFICATION_LIST_CTL = APP_CONTEXT + "/ctl/NotificationListCtl";
+    
+ // Donation Camp Controller
+ 	public String DONATIONCAMP_CTL = APP_CONTEXT + "/ctl/DonationCampCtl";
+ 	public String DONATIONCAMP_LIST_CTL = APP_CONTEXT + "/ctl/DonationCampListCtl";
+
+ 	// Donation Camp View
+ 	public String DONATIONCAMP_VIEW = "/jsp/DonationCampView.jsp";
+ 	public String DONATIONCAMP_LIST_VIEW = "/jsp/DonationCampListView.jsp";
+
+ 	  public String INSURANCE_VIEW = PAGE_FOLDER + "/InsuranceView.jsp";
+ 	    public String INSURANCE_CTL = APP_CONTEXT + "/ctl/InsuranceCtl";
+
+ 	    public String INSURANCE_LIST_VIEW = PAGE_FOLDER + "/InsuranceListView.jsp";
+ 	    public String INSURANCE_LIST_CTL = APP_CONTEXT + "/ctl/InsuranceListCtl";
     
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 

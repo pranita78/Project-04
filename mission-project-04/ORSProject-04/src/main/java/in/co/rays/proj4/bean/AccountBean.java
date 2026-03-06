@@ -8,6 +8,7 @@ package in.co.rays.proj4.bean;
 	    private String balance;
 	    
 
+	    
 	    public String getAccountNo() {
 	        return accountNo;
 	    }

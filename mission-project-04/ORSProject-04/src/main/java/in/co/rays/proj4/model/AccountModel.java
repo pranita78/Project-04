@@ -19,7 +19,6 @@ import in.co.rays.proj4.exception.DatabaseException;
 import in.co.rays.proj4.exception.DuplicateRecordException;
 import in.co.rays.proj4.util.JDBCDataSource;
 
- 
 public class AccountModel {
 
     public Integer nextPk() throws DatabaseException {

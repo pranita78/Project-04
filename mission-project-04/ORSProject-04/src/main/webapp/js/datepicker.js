@@ -12,6 +12,8 @@ $(document).ready(function() {
 	});
 });
 
+
+
 $(function() {
 	var today = new Date();
 	var currentYear = today.getFullYear();
@@ -31,4 +33,24 @@ $(function() {
 			return [ date.getDay() !== 0 ];
 		}
 	});
+});
+
+$(function() {
+
+	var today = new Date();
+	var past30Days = new Date();
+	past30Days.setDate(today.getDate() - 30);
+
+	$("#udate3").datepicker({
+		dateFormat : 'dd-mm-yy',
+		changeMonth : true,
+		changeYear : true,
+		yearRange : currentYear + ":" + currentYear,
+		minDate : today,
+		maxDate : maxDate,
+		beforeShowDay : function(date) {
+			return [ date.getDay() !== 0 ];
+		}
+	});
+
 });
