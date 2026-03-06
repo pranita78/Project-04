@@ -82,11 +82,11 @@ public class InsuranceCtl extends BaseCtl {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		long id = DataUtility.getLong(request.getParameter("insuranceId"));
+		Long id = DataUtility.getLong(request.getParameter("insuranceId"));
 
 		InsuranceModel model = new InsuranceModel();
 
-		if (id > 0) {
+		if (id != null && id > 0) {
 			try {
 				InsuranceBean bean = model.findByPk(id);
 				ServletUtility.setBean(bean, request);

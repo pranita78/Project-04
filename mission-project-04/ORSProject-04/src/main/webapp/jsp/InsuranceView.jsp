@@ -27,7 +27,8 @@ href="<%=ORSView.APP_CONTEXT%>/img/logo.png" sizes="16x16"/>
 <h1 style="margin-bottom:-15; color:navy">
 
 <%
-if(bean != null && bean.getInsuranceId() > 0){
+
+if(bean != null && bean.getInsuranceId() != null && bean.getInsuranceId() > 0){
 %>
 
 Update Insurance
@@ -188,7 +189,7 @@ String htmlList = HTMLUtility.getList("insuranceStatus", bean.getInsuranceStatus
 
 <%
 
-if(bean != null && bean.getInsuranceId() > 0){
+if(bean != null && bean.getInsuranceId() != null && bean.getInsuranceId() > 0){
 
 %>
 

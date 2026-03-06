@@ -113,6 +113,31 @@
       <a href="<%=ORSView.REPORT_LIST_CTL%>">Report List</a>|
        <a href="<%=ORSView.MOBILE_CTL%>">Add Mobile</a> |
       <a href="<%=ORSView.MOBILE_LIST_CTL%>">Mobile List</a>|
+       <a href="<%=ORSView.ATTENDANCE__CTL%>">Add Attendance</a> |
+      <a href="<%=ORSView.ATTENDANCE__LIST_CTL%>">Attendance List</a>|
+       <a href="<%=ORSView.SUPPLIER_CTL%>">Add Supplier</a> |
+      <a href="<%=ORSView.SUPPLIER_LIST_CTL%>">Supplier List</a>|
+      <a href="<%=ORSView.VERSION_CTL%>">Add Version</a> |
+      <a href="<%=ORSView.VERSION_LIST_CTL%>">Version List</a>|
+       <a href="<%=ORSView.TRAINING_CTL%>">Add Training</a> |
+      <a href="<%=ORSView.TRAINING_LIST_CTL%>">Training List</a>|
+         <a href="<%=ORSView.INVENTORY_CTL%>">Add Inventory</a> |
+      <a href="<%=ORSView.INVENTORY_LIST_CTL%>">Inventory List</a>|
+        <a href="<%=ORSView.SHIFT_CTL%>">Add Shift</a> |
+      <a href="<%=ORSView.SHIFT_LIST_CTL%>">Shift List</a>|
+       <a href="<%=ORSView.ENROLLMENT_CTL%>">Add Enrollment</a> |
+      <a href="<%=ORSView.ENROLLMENT_LIST_CTL%>">Enrollment List</a>|
+       <a href="<%=ORSView.EVENT_CTL%>">Add Event</a> |
+      <a href="<%=ORSView.EVENT_LIST_CTL%>">Event List</a>|
+       <a href="<%=ORSView.COURIER_CTL%>">Add Courier</a> |
+      <a href="<%=ORSView.COURIER_LIST_CTL%>">Courier List</a>|
+       <a href="<%=ORSView.NOTIFICATION_CTL%>">Add Notification</a> |
+      <a href="<%=ORSView.NOTIFICATION_LIST_CTL%>">Notification List</a>|
+       <a href="<%=ORSView.DONATIONCAMP_CTL%>">Add DonationCamp</a> |
+      <a href="<%=ORSView.DONATIONCAMP_LIST_CTL%>">DonationCamp List</a>|
+       <a href="<%=ORSView.INSURANCE_CTL%>">Add Insurance</a> |
+      <a href="<%=ORSView.INSURANCE_LIST_CTL%>">Insurance List</a>|
+        
       
 	<%--   <a href="<%=ORSView.BANK_CTL%>">Add Bank</a> |
       <a href="<%=ORSView.BANK_LIST_CTL%>">Bank List</a> |
