@@ -137,6 +137,8 @@
       <a href="<%=ORSView.DONATIONCAMP_LIST_CTL%>">DonationCamp List</a>|
        <a href="<%=ORSView.INSURANCE_CTL%>">Add Insurance</a> |
       <a href="<%=ORSView.INSURANCE_LIST_CTL%>">Insurance List</a>|
+      <a href="<%=ORSView.SUBSCRIPTIONPLAN_CTL%>">Add SubscriptionPlan</a> |
+<a href="<%=ORSView.SUBSCRIPTIONPLAN_LIST_CTL%>">SubscriptionPlan List</a> |
         
       
 	<%--   <a href="<%=ORSView.BANK_CTL%>">Add Bank</a> |

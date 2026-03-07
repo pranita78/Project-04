@@ -206,6 +206,12 @@ public interface ORSView {
 
  	    public String INSURANCE_LIST_VIEW = PAGE_FOLDER + "/InsuranceListView.jsp";
  	    public String INSURANCE_LIST_CTL = APP_CONTEXT + "/ctl/InsuranceListCtl";
+ 	    
+ 	   public String SUBSCRIPTIONPLAN_VIEW = PAGE_FOLDER + "/SubscriptionPlanView.jsp";
+ 	  public String SUBSCRIPTIONPLAN_CTL = APP_CONTEXT + "/ctl/SubscriptionPlanCtl";
+
+ 	  public String SUBSCRIPTIONPLAN_LIST_VIEW = PAGE_FOLDER + "/SubscriptionPlanListView.jsp";
+ 	  public String SUBSCRIPTIONPLAN_LIST_CTL = APP_CONTEXT + "/ctl/SubscriptionPlanListCtl";
     
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 
