@@ -129,10 +129,11 @@ public class SubscriptionPlanModel {
 			try {
 				conn.rollback();
 			} catch (Exception ex) {
+				ex.printStackTrace();
 				throw new ApplicationException("Update rollback exception");
 			}
 
-			throw new ApplicationException("Exception in update SubscriptionPlan");
+
 
 		} finally {
 

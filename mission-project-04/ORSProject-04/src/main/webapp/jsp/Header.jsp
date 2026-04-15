@@ -138,7 +138,17 @@
        <a href="<%=ORSView.INSURANCE_CTL%>">Add Insurance</a> |
       <a href="<%=ORSView.INSURANCE_LIST_CTL%>">Insurance List</a>|
       <a href="<%=ORSView.SUBSCRIPTIONPLAN_CTL%>">Add SubscriptionPlan</a> |
-<a href="<%=ORSView.SUBSCRIPTIONPLAN_LIST_CTL%>">SubscriptionPlan List</a> |
+       <a href="<%=ORSView.SUBSCRIPTIONPLAN_LIST_CTL%>">SubscriptionPlan List</a> |
+        <a href="<%=ORSView.COMPLAINT_CTL%>">Add Complain</a> |
+      <a href="<%=ORSView.COMPLAINT_LIST_CTL%>">Complain List</a>|
+       <a href="<%=ORSView.PERMISSION_CTL%>">Add Permission</a> |
+      <a href="<%=ORSView.PERMISSION_LIST_CTL%>">Permission List</a>|
+       <a href="<%=ORSView.CLIENT_CTL%>">Add Client</a> |
+      <a href="<%=ORSView.CLIENT_LIST_CTL%>">Client List</a>|
+        <a href="<%=ORSView.PARKING_CTL%>">Add Parking</a> |
+      <a href="<%=ORSView.PARKING_LIST_CTL%>">Parking List</a>|
+     
+        
         
       
 	<%--   <a href="<%=ORSView.BANK_CTL%>">Add Bank</a> |

@@ -1,8 +1,11 @@
 eclipse.preferences.version=1
 encoding//src/main/java/in/co/rays/proj4/bean/ReportBean.java=UTF-8
 encoding//src/main/java/in/co/rays/proj4/controller/BankListCtl.java=UTF-8
+encoding//src/main/java/in/co/rays/proj4/controller/ComplaintCtl.java=UTF-8
 encoding//src/main/java/in/co/rays/proj4/controller/FacultyCtl.java=UTF-8
+encoding//src/main/java/in/co/rays/proj4/controller/ParkingCtl.java=UTF-8
 encoding//src/main/java/in/co/rays/proj4/controller/TrainingCtl.java=UTF-8
+encoding//src/main/java/in/co/rays/proj4/model/ComplaintModel.java=UTF-8
 encoding//src/main/java/in/co/rays/proj4/model/CourseModel.java=UTF-8
 encoding//src/main/java/in/co/rays/proj4/test/TestStudentModel.java=UTF-8
 encoding//src/main/webapp/jsp/CourierListView.jsp=UTF-8

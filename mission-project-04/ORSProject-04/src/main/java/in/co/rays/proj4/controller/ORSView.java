@@ -212,6 +212,31 @@ public interface ORSView {
 
  	  public String SUBSCRIPTIONPLAN_LIST_VIEW = PAGE_FOLDER + "/SubscriptionPlanListView.jsp";
  	  public String SUBSCRIPTIONPLAN_LIST_CTL = APP_CONTEXT + "/ctl/SubscriptionPlanListCtl";
+ 	  
+ 	   public String COMPLAINT_VIEW = PAGE_FOLDER + "/ComplaintView.jsp";
+  	  public String COMPLAINT_CTL = APP_CONTEXT + "/ctl/ComplaintCtl";
+
+  	  public String COMPLAINT_LIST_VIEW = PAGE_FOLDER + "/ComplaintListView.jsp";
+  	  public String COMPLAINT_LIST_CTL = APP_CONTEXT + "/ctl/ComplaintListCtl";
+  	  
+  	public String PERMISSION_VIEW   = PAGE_FOLDER + "/PermissionView.jsp";
+  	public String PERMISSION_CTL   = APP_CONTEXT + "/ctl/PermissionCtl";
+  	
+  	public String PERMISSION_LIST_VIEW = PAGE_FOLDER + "/PermissionListView.jsp";
+  	public String PERMISSION_LIST_CTL  = APP_CONTEXT + "/ctl/PermissionListCtl";
+  	
+    public String CLIENT_VIEW = PAGE_FOLDER + "/ClientView.jsp";
+	    public String CLIENT_CTL = APP_CONTEXT + "/ctl/ClientCtl";
+
+	    public String CLIENT_LIST_VIEW = PAGE_FOLDER + "/ClientListView.jsp";
+	    public String CLIENT_LIST_CTL = APP_CONTEXT + "/ctl/ClientListCtl";
+	    
+	    public String PARKING_VIEW = PAGE_FOLDER + "/ParkingView.jsp";
+	    public String PARKING_CTL = APP_CONTEXT + "/ctl/ParkingCtl";
+
+	    public String PARKING_LIST_VIEW = PAGE_FOLDER + "/ParkingListView.jsp";
+	    public String PARKING_LIST_CTL = APP_CONTEXT + "/ctl/ParkingListCtl";
+  	
     
     public String JAVA_DOC = APP_CONTEXT + "/doc/index.html";
 
